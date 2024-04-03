@@ -1,7 +1,7 @@
 # Usage
 
-To use daylight_timelapser in a project:
+To use daylight_timelapse in a project:
 
 ```
-import daylight_timelapser
+import daylight_timelapse
 ```

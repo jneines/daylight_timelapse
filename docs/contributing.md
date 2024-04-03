@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at <https://github.com/jneines/daylight_timelapser/issues>.
+Report bugs at <https://github.com/jneines/daylight_timelapse/issues>.
 
 If you are reporting a bug, please include:
 
@@ -29,14 +29,14 @@ Look through the GitHub issues for features. Anything tagged with
 
 ### Write Documentation
 
-daylight_timelapser could always use more documentation,
-whether as part of the official daylight_timelapser docs,
+daylight_timelapse could always use more documentation,
+whether as part of the official daylight_timelapse docs,
 in docstrings, or even on the web in blog posts, articles, and such.
 
 ### Submit Feedback
 
 The best way to send feedback is to file an issue at
-<https://github.com/jneines/daylight_timelapser/issues>.
+<https://github.com/jneines/daylight_timelapse/issues>.
 
 If you are proposing a feature:
 
@@ -46,14 +46,14 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up daylight_timelapser for local development.
+Ready to contribute? Here's how to set up daylight_timelapse for local development.
 
-1.  Fork the daylight_timelapser repo on GitHub.
+1.  Fork the daylight_timelapse repo on GitHub.
 
 2.  Clone your fork locally:
 
     ```shell
-    $ git clone git@github.com:your_name_here/daylight_timelapser.git
+    $ git clone git@github.com:your_name_here/daylight_timelapse.git
     ```
 
 3.  Install your local copy into a virtualenv. Assuming you have
@@ -61,8 +61,8 @@ Ready to contribute? Here's how to set up daylight_timelapser for local developm
     local development:
 
     ```shell
-    $ mkvirtualenv daylight_timelapser
-    $ cd daylight_timelapser/
+    $ mkvirtualenv daylight_timelapse
+    $ cd daylight_timelapse/
     $ python setup.py develop
     ```
 
@@ -78,7 +78,7 @@ Ready to contribute? Here's how to set up daylight_timelapser for local developm
     and the tests, including testing other Python versions with tox:
 
     ```shell
-    $ flake8 daylight_timelapser tests
+    $ flake8 daylight_timelapse tests
     $ python setup.py test or pytest
     $ tox
     ```
@@ -104,5 +104,5 @@ Before you submit a pull request, check that it meets these guidelines:
     Put your new functionality into a function with a docstring, and add
     the feature to the list in README.rst.
 3.  The pull request should work for Python 3.8 and later, and
-    for PyPy. Check <https://github.com/jneines/daylight_timelapser/pull_requests> and make sure that the tests pass for all
+    for PyPy. Check <https://github.com/jneines/daylight_timelapse/pull_requests> and make sure that the tests pass for all
     supported Python versions.

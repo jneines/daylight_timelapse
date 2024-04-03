@@ -1,8 +1,8 @@
-site_name: daylight_timelapser
+site_name: daylight_timelapse
 site_description: Create a daylight spanning timelapser using the async_app package
 site_author: jneines
-site_url: https://jneines.github.io/daylight_timelapser
-repo_url: https://github.com/jneines/daylight_timelapser
+site_url: https://jneines.github.io/daylight_timelapse
+repo_url: https://github.com/jneines/daylight_timelapse
 
 copyright: "Copyright &copy; 2024 - 2024 Jens Nie"
 
@@ -64,8 +64,8 @@ nav:
     - Contributing: contributing.md
     - FAQ: faq.md
     - Changelog: changelog.md
-    - Report Issues: https://github.com/jneines/daylight_timelapser/issues
+    - Report Issues: https://github.com/jneines/daylight_timelapse/issues
     - API Reference:
-          - daylight_timelapser component: daylight_timelapser.md
+          - daylight_timelapse component: daylight_timelapse.md
           - photo_store component: photo_store.md
           - video_store component: video_store.md

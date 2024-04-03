@@ -1,5 +1,5 @@
 [project]
-name = "daylight_timelapser"
+name = "daylight_timelapse"
 version = "0.0.1"
 dynamic = [
     "dependencies",
@@ -8,7 +8,7 @@ description = "Create a daylight spanning timelapser using the async_app package
 readme = "README.md"
 requires-python = ">=3.11"
 keywords = [
-    "daylight_timelapser",
+    "daylight_timelapse",
 ]
 license = {text = "MIT License"}
 authors = [
@@ -23,11 +23,13 @@ classifiers = [
 ]
 
 [project.entry-points."console_scripts"]
-daylight_timelapser = "daylight_timelapser.daylight_timelapser:main"
+daylight_timelapse = "daylight_timelapse.daylight_timelapse:main"
+photo_store = "daylight_timelapse.photo_store:main"
+video_store = "daylight_timelapse.video_store:main"
 
 [project.optional-dependencies]
 all = [
-    "daylight_timelapser[extra]",
+    "daylight_timelapse[extra]",
 ]
 
 #extra = [
@@ -37,7 +39,7 @@ all = [
 
 [tool]
 [tool.setuptools.packages.find]
-include = ["daylight_timelapser*"]
+include = ["daylight_timelapse*"]
 exclude = ["docs*"]
 
 [tool.setuptools.dynamic]
@@ -59,7 +61,7 @@ search = 'version = "{current_version}"'
 replace = 'version = "{new_version}"'
 
 [[tool.bumpversion.files]]
-filename = "daylight_timelapser/__init__.py"
+filename = "daylight_timelapse/__init__.py"
 search = '__version__ = "{current_version}"'
 replace = '__version__ = "{new_version}"'
 
@@ -72,7 +74,7 @@ max-line-length = 88
 
 
 [project.urls]
-Homepage = "https://github.com/jneines/daylight_timelapser"
+Homepage = "https://github.com/jneines/daylight_timelapse"
 
 [build-system]
 requires = ["setuptools>=64", "setuptools_scm>=8"]

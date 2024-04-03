@@ -1,4 +1,4 @@
  
 # photo_store component
 
-::: daylight_timelapser.photo_store
+::: daylight_timelapse.photo_store

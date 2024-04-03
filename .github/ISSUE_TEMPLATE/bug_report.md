@@ -8,7 +8,7 @@ labels: bug
 
 ### Environment Information
 
--   daylight_timelapser version:
+-   daylight_timelapse version:
 -   Python version:
 -   Operating System:
 

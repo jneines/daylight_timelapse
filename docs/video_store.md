@@ -1,4 +1,4 @@
  
 # video_store component
 
-::: daylight_timelapser.video_store
+::: daylight_timelapse.video_store
