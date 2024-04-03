@@ -26,16 +26,16 @@ classifiers = [
 ]
 
 [project.entry-points."console_scripts"]
-daylight_timelapser = "daylight_timelapser.cli:main"
+daylight_timelapser = "daylight_timelapser.daylight_timelapser:main"
 
 [project.optional-dependencies]
 all = [
     "daylight_timelapser[extra]",
 ]
 
-extra = [
-    "pandas",
-]
+#extra = [
+#    "pandas",
+#]
 
 
 [tool]

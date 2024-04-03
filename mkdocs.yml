@@ -7,20 +7,7 @@ repo_url: https://github.com/jneines/daylight_timelapser
 copyright: "Copyright &copy; 2024 - 2024 Jens Nie"
 
 theme:
-    palette:
-        - scheme: default
-          #   primary: blue
-          #   accent: indigo
-          toggle:
-              icon: material/toggle-switch-off-outline
-              name: Switch to dark mode
-        - scheme: slate
-          primary: indigo
-          accent: indigo
-          toggle:
-              icon: material/toggle-switch
-              name: Switch to light mode
-    name: material
+    name: readthedocs
     icon:
         repo: fontawesome/brands/github
     # logo: assets/logo.png
@@ -31,7 +18,6 @@ theme:
         - navigation.top
         - search.highlight
         - search.share
-    custom_dir: "docs/overrides"
     font:
         text: Google Sans
         code: Regular
@@ -79,8 +65,7 @@ nav:
     - FAQ: faq.md
     - Changelog: changelog.md
     - Report Issues: https://github.com/jneines/daylight_timelapser/issues
-    - Examples:
-        - examples/intro.ipynb
     - API Reference:
-          - daylight_timelapser module: daylight_timelapser.md
-          - common module: common.md
+          - daylight_timelapser component: daylight_timelapser.md
+          - photo_store component: photo_store.md
+          - video_store component: video_store.md

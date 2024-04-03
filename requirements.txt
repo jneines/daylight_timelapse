@@ -1,1 +1,4 @@
 numpy
+astral
+appdirs
+async_app@git+https://github.com/jneines/async_app.git
