@@ -154,6 +154,7 @@ async def fetch_image(camera_name):
     "--frame-margin",
     type=int,
     default=120,
+    show_default=True,
     help="Number of additional frames taken before sunrise and after sunset in respect to the 'every' setting. The default setting results in a 1 hour margin for the default setting of 'every'.",
 )
 def main(**kwargs):

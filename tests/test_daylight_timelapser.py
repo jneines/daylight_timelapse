@@ -30,4 +30,4 @@ class TestDaylight_timelapser(unittest.TestCase):
 
         help_result = runner.invoke(daylight_timelapser.main, ['--help'])
         assert help_result.exit_code == 0
-        assert '--help  Show this message and exit.' in help_result.output
+        assert 'Usage: daylight_timelapser.py [OPTIONS]' in help_result.output
