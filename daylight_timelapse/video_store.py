@@ -85,7 +85,7 @@ async def start_video_processor(camera_name):
 
     logger.info(f"Starting new video_processor for {camera_name}")
 
-    app_dirs = appdirs.AppDirs(appname="daily-timelapse")
+    app_dirs = appdirs.AppDirs(appname="daylight-timelapse")
 
     video_base_dir = Path(app_dirs.user_data_dir) / "videos"
     logs_base_dir = Path(app_dirs.user_data_dir) / "logs"

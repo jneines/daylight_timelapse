@@ -30,7 +30,7 @@ def new_photo(record):
             f"Received new image for {camera_name} with {len(image_data)} bytes."
         )
 
-        app_dirs = appdirs.AppDirs(appname="daily-timelapse")
+        app_dirs = appdirs.AppDirs(appname="daylight-timelapse")
 
         photos_base_dir = Path(app_dirs.user_data_dir) / "photos"
 

@@ -14,6 +14,7 @@ import click
 from async_app.app import AsyncApp
 from async_app.logger import logger
 import async_app.messenger as app_messenger
+import async_app.state as app_state
 from async_app.app_factory import async_app_options
 
 
@@ -216,7 +217,7 @@ def main(**kwargs):
     for task_description in task_descriptions:
         app.add_task_description(task_description)
 
-    asyncio.run(app.run())  # , debug=True)
+    asyncio.run(app.run(), debug=True)
 
 
 if __name__ == "__main__":
