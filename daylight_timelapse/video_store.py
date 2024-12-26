@@ -104,6 +104,11 @@ async def start_video_processor(camera_name):
     video_path = video_dir / f"{camera_name}-{now_str}.mp4"
 
     # ENV='FFREPORT=file="./%p-%t.log":level=32'
+    # NOTE: The '-vf format=yuv420p' setting is essential in order
+    # to later play material via dlna to samsung tvs.
+    # The '-movflags ...' set of parameters let ffmpeg create a fragmented
+    # mp4 file. This ensures the file to be playable even if the video is
+    # not completed (e.g. after write failures, network errors ...)
     ffmpeg_log_file = (logs_dir / "%p-%t.log").as_posix()
     cmd = (
         "/usr/bin/ffmpeg -y "
@@ -114,7 +119,9 @@ async def start_video_processor(camera_name):
         "-f lavfi -i anullsrc -c:a aac "
         "-filter:v scale=1280:720 "
         # "-b:v 4M -c:v h264 -profile:v high422 "
-        "-b:v 4M -c:v h264 -preset slow -crf 22 "
+        #"-b:v 4M -c:v h264 -preset slow -crf 22 "
+        "-b:v 2M -c:v h264 -preset slow -crf 25 -vf format=yuv420p "
+        "-movflags +frag_keyframe+separate_moof+omit_tfhd_offset+empty_moov "
         "-shortest "
         f"{video_path}"
     )
